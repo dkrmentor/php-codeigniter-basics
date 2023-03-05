@@ -1,0 +1,11 @@
+.main-container{
+    margin: 30px auto;
+    padding: 30px;
+    width: 30%;
+    background-color: rgba(70, 69, 69, 0.418);
+    box-shadow: 10px 10px 15px 10px rgba(0, 0, 0, 0.192);
+    color: white;
+}
+.main-container h1{
+    margin: 10px 0;
+}

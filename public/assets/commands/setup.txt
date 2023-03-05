@@ -1,0 +1,31 @@
+download xamp
+download composer.exe setup
+go to php.ini and remove (:) from intl 
+now for the project
+go in htdocs and run below command in cmd to create a project 
+----------> composer create-project codeigniter4/appstarter project-name
+now to start/run the project go to terminal of the project and run below command
+----------> php spark serve
+
+create database first in phpmyadmin
+go to .env file and setup the things there  change it to development
+ database.default.hostname = localhost
+ database.default.database = database-name
+ database.default.username = root
+ database.default.password = 
+ database.default.DBDriver = MySQLi
+ database.default.DBPrefix =
+ database.default.port = 3306
+ 
+ to test create table in database/migration 
+by running command :php spark migrate:create Admin
+now run : php spark migrate
+
+now here is the main part ->> create mvc 
+create model by running command : php spark make:model AdminModel
+then create views
+create file with bootstrap
+then define your control structure in home.php
+add filter 
+run command: php spark make:filter FilterName
+set routes also 
